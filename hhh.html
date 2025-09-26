@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria's Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgb(187, 220, 250);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #a8f6f9 0%, #4b7bcf 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(15, 4, 65, 0.3);
+        }
+        
+        .intro {
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        
+        .intro-text {
+            flex: 2;
+        }
+        
+        .profile-img {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .profile-img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #2c529e;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            color: #2575fc;
+            margin: 20px 0 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        .link-section {
+            background: #f9f9f9;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        
+        .favorite-link {
+            display: inline-block;
+            background: #55578a;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .favorite-link:hover {
+            background: #669af4;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .canteen-reviews {
+            padding: 30px;
+        }
+        
+        .canteen {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f5f7fa;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .canteen h3 {
+            color: #3c53a6;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .rating {
+            color: #ff9f43;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .comment {
+            font-style: italic;
+            color: #555;
+        }
+        
+        
+        @media (max-width: 600px) {
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-img img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gloria</h1>
+            <p>CityU year 3 Student</p>
+        </header>
+        
+        <section class="intro">
+            <div class="intro-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Gloria, a third-year Linguistics student at City University of Hong Kong. I'm passionate about linguistics, and exploring the diverse food culture in Hong Kong. In my free time, I enjoy discovering new cafes around the city.</p>
+             
+            </div>
+            <div class="profile-img">
+                <img src="picture.png" alt="Terrence Lam">
+                 <h5> This is a picture of my favourite Cantonese singer. </h5>
+                
+            </div>
+        </section>
+        
+        <section class="link-section">
+            <h2>Website I use for music</h2>
+            <a href="https://music.youtube.com" class="favorite-link" target="_blank">YouTube Music</a>
+        </section>
+        
+        <section class="canteen-reviews">
+            <h2>CityU Canteen Reviews</h2>
+            
+            <div class="canteen">
+                <h3>AC1 🌆</h3>
+                <div class="rating">⭐⭐⭐</div>
+                <p class="comment">Mostly visiting for the bakery only as pastries are relatively a bit cheaper than other bakeries outside. Can get crowded during lunch hours though :( </p>
+            </div>
+            
+            <div class="canteen">
+                <h3>AC2 🏬</h3>
+                <div class="rating">⭐</div>
+                <p class="comment">Quite pricey compared to other canteens 💸. With that price higher quality of food is expected.</p>
+            </div>
+            
+            <div class="canteen">
+                <h3>AC3 🏢</h3>
+                <div class="rating">⭐⭐</div>
+                <p class="comment">Also quite pricey but slightly better than AC2. Perfect place if you crave Chinese cusines and affordable drinks. </p>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>
